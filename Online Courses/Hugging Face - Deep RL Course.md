@@ -62,7 +62,7 @@ A continuing task is a task that continues forever (**no terminal state**). In 
 ### Solving RL problems
 There are two main approaches for solving RL problems.
 #### The policy $\pi$: the agent's brain
-The #policy **$\pi$** is the **brain of our agent**, it’s the function that tells us what **action to take given the state we are in. So it **defines the agent’s behavior** at a given time.
+The #policy **$\pi$** is the **brain of our agent**, it’s the function that tells us what **action to take given the state we are in**. So it **defines the agent’s behavior** at a given time.
 
 >[!note]
 >The policy can be seen as a #strategy or a #heuristic.
@@ -70,7 +70,7 @@ The #policy **$\pi$** is the **brain of our agent**, it’s the function that
 ![[Pasted image 20240216000116.png]]
 
 This policy is a learnable function and the goal is to find the optimal one $\pi^*$ that maximizes the expected return. $\pi^*$ can be found through training.
-There are two approaches to train our agent to find this optimal policy π*:
+There are two approaches to train our agent to find this optimal policy $\pi^*$:
 - **Directly,** by teaching the agent to learn which **action to take,** given the current state: **Policy-Based Methods.**
 - Indirectly, **teach the agent to learn which state is more valuable** and then take the action that **leads to the more valuable states**: Value-Based Methods.
 

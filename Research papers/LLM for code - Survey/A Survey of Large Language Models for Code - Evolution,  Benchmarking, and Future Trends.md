@@ -125,7 +125,7 @@ $$
 
 ```mermaid
 mindmap
-  root((LM))
+  root((NLP))
     Attention
       Self-attention
       Grouped-query attention
