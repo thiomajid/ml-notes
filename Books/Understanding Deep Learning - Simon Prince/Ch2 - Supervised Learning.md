@@ -15,4 +15,29 @@ When training a model, we are seeking $\hat{\phi}$ the set of parameters that mi
 $$
 \hat{\phi} = \underset{\phi}{\text{argmin}} \left[L(\phi) \right]
 $$
-## The linear regression case
+## 1D linear regression case
+In the case of a 1D linear regression, the model is defined as:
+$$
+\begin{align*}
+y &= f(x, \phi)\\
+&= \phi_{0}+ \phi_1x
+\end{align*}
+$$
+
+The **least square loss** can be used as a loss function in the case of linear regresssion:
+$$
+\begin{align*}
+L(\phi) &= \sum_{i=1}^{I} (f(x_{i,}\phi) - y_i)^2\\
+&= \sum_{i=1}^{I}(\phi_{0}+ \phi_{1} x_{i}- y_i)^2
+\end{align*}
+$$
+
+Hence, the optimal set of parameters that we are looking for is defined as:
+$$
+\hat{\phi} = \underset{\phi}{\text{argmin}}[\sum_{i=1}^{I}(\phi_{0}+ \phi_{1} x_{i}- y_i)^2]
+$$
+
+## Notes
+- Even though the terms *loss and cost functions* are used interchangeably, a loss function is the **individual** term associated with **a data point** and the cost function is the **overall** quantity that is minimized.
+- Models defined as $y = f(x, \phi)$ are *discriminative* while *generative* ones are defined as $x = g(y, \phi)$ where real-world measurements $x$ are computed as a function of the output $y$.
+- When computing partial derivatives like $\frac{\partial{L}}{\partial{\phi_0}}$, other terms in the expression are treated as **constants**.
