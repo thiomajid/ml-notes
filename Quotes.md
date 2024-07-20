@@ -1,0 +1,1 @@
+- Information is the resolution of uncertainty => Claude Shannon
