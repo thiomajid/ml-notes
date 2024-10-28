@@ -41,6 +41,20 @@ Building on top of that, a state space model (SSM) [^2] is model which maps a 1-
 
 When training an SSM, the matrices $A, B, C, D$ are the learnable parameters using gradient descent. $D$ is sometimes omitted because the term $Du$ can be seen as a **skip connection**.
 
+Given that an SSM model operates on a continuous signal $u(t)$
+in order to be applied on a discrete input sequence, the SSM must be discretized by a *step size* $\Delta$. The inputs $u_k$ can be viewed  
+
+
+
+
+
+
+
+
+
+
+
+
 
 [^1]: [State-space representation - Wikipedia](https://en.wikipedia.org/wiki/State-space_representation)
 [^2]: [[2111.00396] Efficiently Modeling Long Sequences with Structured State Spaces (arxiv.org)](https://arxiv.org/abs/2111.00396)
